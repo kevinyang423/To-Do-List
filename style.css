@@ -1,0 +1,96 @@
+body{
+    background-color: #ecf0f1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+h1{
+    color: white;
+    transition: color 0.5s ease-in-out;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.clicked{
+    color: #7f8c8d;
+}
+
+.form,.greetings{
+    display:none;
+}
+.greetings{
+    color:white;
+    font-size: 50px;
+    text-align:center;
+    position: relative;
+    top: 250px;
+}
+.showing{
+    display:block;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+.bgImage{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    animation: fadeIn .5s linear;
+}
+.clockdiv{
+    height: 100px;
+}
+.toDoInput{
+    position: fixed;
+    bottom: 10%;
+    right:40%;
+    border: thin;
+    background-color: transparent;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+    color: #000;
+    width: 20%;
+}
+.toDoInput::-webkit-input-placeholder{
+    color:white;
+    text-decoration:underline;
+}
+.weather{
+    position: fixed;
+    bottom:95%;
+    right:5%;
+    color: gray;
+}
+.tasks{
+    position: fixed;
+    top:3%;
+    right:5%;
+    color:white;
+}
+div.tasks>h2{
+    font-size:75px;
+}
+div.tasks>ul>li{
+    list-style: none;
+}
+div.tasks>ul>li>span{
+    font-size:30px;
+}
+div.tasks>ul>li>button{
+    border:thin;
+    font-size:30px;
+    background-color: transparent;
+}
