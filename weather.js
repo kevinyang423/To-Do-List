@@ -1,3 +1,4 @@
+import config from config.js
 const weather=document.querySelector(".js-weather");
 const COORDS= 'coords';
 const API_KEYS=config.API_KEY;
